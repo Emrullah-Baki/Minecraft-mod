@@ -1,6 +1,9 @@
 package net.emru.jjk_modding;
 
 import com.mojang.logging.LogUtils;
+import net.emru.jjk_modding.block.ModBlocks;
+import net.emru.jjk_modding.item.ModCreativeModTab;
+import net.emru.jjk_modding.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -24,6 +27,10 @@ public class JJKMod {
 
     public JJKMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModTab.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -49,8 +56,7 @@ public class JJKMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
         }
     }
 }
