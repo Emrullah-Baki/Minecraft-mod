@@ -24,6 +24,10 @@ public class ModCreativeModTab {
 
                         pOutput.accept(ModBlocks.STEEL_BLOCK.get());
 
+                        pOutput.accept(ModItems.STEEL_HELMET.get());
+                        pOutput.accept(ModItems.STEEL_CHESTPLATE.get());
+                        pOutput.accept(ModItems.STEEL_LEGGINGS.get());
+                        pOutput.accept(ModItems.STEEL_BOOTS.get());
                     })
                     .build());
 

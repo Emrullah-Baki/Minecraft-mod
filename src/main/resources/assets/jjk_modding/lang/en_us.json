@@ -3,5 +3,10 @@
 
   "block.jjk_modding.steel_block": "Block of Steel",
 
+  "item.jjk_modding.steel_helmet": "Steel Helmet",
+  "item.jjk_modding.steel_chestplate": "Steel Chestplate",
+  "item.jjk_modding.steel_leggings": "Steel Leggings",
+  "item.jjk_modding.steel_boots": "Steel Boots",
+
   "creativetab.jjk_modding": "Banana Tutorial Tab"
 }
