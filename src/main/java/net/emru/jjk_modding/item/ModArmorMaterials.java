@@ -10,8 +10,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    STEEL_INGOT("steel_ingot", 30, new int[]{ 16, 21, 21,18 }, 25,
-    SoundEvents.ARMOR_EQUIP_DIAMOND, 3f, 0f, () -> Ingredient.of(ModItems.STEEL_INGOT.get()) );
+    STEEL_INGOT("steel", 30, new int[]{ 16, 21, 21,18 }, 25,
+    SoundEvents.ARMOR_EQUIP_DIAMOND, 3f, 0f, () -> Ingredient.of(ModItems.STEEL_INGOT.get()));
 
     private final String name;
     private final int durabilityMultiplier;
