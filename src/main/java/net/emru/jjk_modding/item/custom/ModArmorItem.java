@@ -18,6 +18,8 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ModArmorMaterials.STEEL_INGOT, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 10,
+                            false,false, false))
+                    .put(ModArmorMaterials.STEEL_INGOT, new MobEffectInstance(MobEffects.REGENERATION, 200, 10,
                             false,false, false)).build();
 
     public ModArmorItem(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
