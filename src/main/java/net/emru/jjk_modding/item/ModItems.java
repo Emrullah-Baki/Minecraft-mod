@@ -1,6 +1,7 @@
 package net.emru.jjk_modding.item;
 
 import net.emru.jjk_modding.JJKMod;
+import net.emru.jjk_modding.item.custom.ModArmorItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,7 +19,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
-            () -> new ArmorItem(ModArmorMaterials.STEEL_INGOT, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.STEEL_INGOT, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate",
             () -> new ArmorItem(ModArmorMaterials.STEEL_INGOT, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> STEEL_LEGGINGS = ITEMS.register("steel_leggings",
