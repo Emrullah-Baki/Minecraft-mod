@@ -11,16 +11,19 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 
+import java.util.List;
 import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
 
-    private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
-            (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.STEEL_INGOT, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 10,
-                            false,false, false))
-                    .put(ModArmorMaterials.STEEL_INGOT, new MobEffectInstance(MobEffects.REGENERATION, 200, 10,
-                            false,false, false)).build();
+    private static final Map<ArmorMaterial, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
+            (new ImmutableMap.Builder<ArmorMaterial, List<MobEffectInstance>>())
+                    .put(ModArmorMaterials.STEEL_INGOT, List.of(
+                            new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 9,
+                                false,false, false),
+                            new MobEffectInstance(MobEffects.REGENERATION, 200, 2,
+                                    false,false, false)
+                    )).build();
 
     public ModArmorItem(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
         super(pMaterial, pType, pProperties);
@@ -41,12 +44,14 @@ public class ModArmorItem extends ArmorItem {
     }
 
     private void evaluateArmorEffects(Player player) {
-        for (Map.Entry<ArmorMaterial, MobEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
+        for (Map.Entry<ArmorMaterial, List<MobEffectInstance>> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
             ArmorMaterial mapArmorMaterial = entry.getKey();
-            MobEffectInstance mapStatusEffect = entry.getValue();
+            List<MobEffectInstance> effects = entry.getValue();
 
             if(hasCorrectArmorOn(mapArmorMaterial, player)) {
-                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+                for (MobEffectInstance effect : effects) {
+                addStatusEffectForMaterial(player, mapArmorMaterial, effect);
+            }
             }
         }
     }

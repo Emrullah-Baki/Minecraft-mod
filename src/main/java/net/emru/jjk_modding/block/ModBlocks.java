@@ -21,8 +21,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.NETHERITE_BLOCK)));
-    public static final RegistryObject<Block> NAME = registerBlock("name",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.NETHERITE_BLOCK)));
+    public static final RegistryObject<Block> STEEL_ORE = registerBlock("steel_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.NETHERITE_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn =BLOCKS.register(name,block);

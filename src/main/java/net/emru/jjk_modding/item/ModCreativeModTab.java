@@ -21,8 +21,10 @@ public class ModCreativeModTab {
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModItems.STEEL_INGOT.get());
+                        pOutput.accept(ModItems.RAW_STEEL.get());
 
                         pOutput.accept(ModBlocks.STEEL_BLOCK.get());
+                        pOutput.accept(ModBlocks.STEEL_ORE.get());
 
                         pOutput.accept(ModItems.STEEL_HELMET.get());
                         pOutput.accept(ModItems.STEEL_CHESTPLATE.get());

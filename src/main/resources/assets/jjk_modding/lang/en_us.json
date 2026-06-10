@@ -1,7 +1,9 @@
 {
-  "item.jjk_modding.steel": "Steel",
+  "item.jjk_modding.steel_ingot": "Steel",
+  "item.jjk_modding.raw_steel": "Raw Steel",
 
   "block.jjk_modding.steel_block": "Block of Steel",
+  "block.jjk_modding.steel_ore": "Raw Steel",
 
   "item.jjk_modding.steel_helmet": "Steel Helmet",
   "item.jjk_modding.steel_chestplate": "Steel Chestplate",

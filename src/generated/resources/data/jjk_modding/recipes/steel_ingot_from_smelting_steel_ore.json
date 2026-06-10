@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "steel",
+  "ingredient": {
+    "item": "jjk_modding:steel_ore"
+  },
+  "result": "jjk_modding:steel_ingot"
+}

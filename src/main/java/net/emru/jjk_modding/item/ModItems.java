@@ -1,6 +1,7 @@
 package net.emru.jjk_modding.item;
 
 import net.emru.jjk_modding.JJKMod;
+//import net.emru.jjk_modding.item.custom.ModArmorItem;
 import net.emru.jjk_modding.item.custom.ModArmorItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
@@ -15,7 +16,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
             () -> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item> RAW_STEEL = ITEMS.register("raw_steel",
+            () -> new Item(new Item.Properties()));
 
 
     public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
