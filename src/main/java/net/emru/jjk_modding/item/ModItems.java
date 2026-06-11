@@ -3,8 +3,7 @@ package net.emru.jjk_modding.item;
 import net.emru.jjk_modding.JJKMod;
 //import net.emru.jjk_modding.item.custom.ModArmorItem;
 import net.emru.jjk_modding.item.custom.ModArmorItem;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -18,7 +17,19 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_STEEL = ITEMS.register("raw_steel",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_STICK = ITEMS.register("steel_stick",
+            () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
+            () -> new PickaxeItem(ModToolTiers.STEEL, 3, 2, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.STEEL, 1, 3, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe",
+            () -> new AxeItem(ModToolTiers.STEEL, 4, 3, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
+            () -> new HoeItem(ModToolTiers.STEEL, 0, 0, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel",
+            () -> new ShovelItem(ModToolTiers.STEEL, 0, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
             () -> new ModArmorItem(ModArmorMaterials.STEEL_INGOT, ArmorItem.Type.HELMET, new Item.Properties()));

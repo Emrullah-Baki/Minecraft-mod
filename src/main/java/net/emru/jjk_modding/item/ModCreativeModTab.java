@@ -22,6 +22,7 @@ public class ModCreativeModTab {
 
                         pOutput.accept(ModItems.STEEL_INGOT.get());
                         pOutput.accept(ModItems.RAW_STEEL.get());
+                        pOutput.accept(ModItems.STEEL_STICK.get());
 
                         pOutput.accept(ModBlocks.STEEL_BLOCK.get());
                         pOutput.accept(ModBlocks.STEEL_ORE.get());
@@ -30,6 +31,12 @@ public class ModCreativeModTab {
                         pOutput.accept(ModItems.STEEL_CHESTPLATE.get());
                         pOutput.accept(ModItems.STEEL_LEGGINGS.get());
                         pOutput.accept(ModItems.STEEL_BOOTS.get());
+
+                        pOutput.accept(ModItems.STEEL_SWORD.get());
+                        pOutput.accept(ModItems.STEEL_PICKAXE.get());
+                        pOutput.accept(ModItems.STEEL_AXE.get());
+                        pOutput.accept(ModItems.STEEL_HOE.get());
+                        pOutput.accept(ModItems.STEEL_SHOVEL.get());
                     })
                     .build());
 

@@ -40,6 +40,88 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.STEEL_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.STEEL_BLOCK.get()), has(ModBlocks.STEEL_BLOCK.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_STICK.get(), 4)
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_SWORD.get())
+                .pattern(" S ")
+                .pattern(" S ")
+                .pattern(" # ")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .define('#', ModItems.STEEL_STICK.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .define('#', ModItems.STEEL_STICK.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_AXE.get())
+                .pattern("SS ")
+                .pattern("S# ")
+                .pattern(" # ")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .define('#', ModItems.STEEL_STICK.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_HOE.get())
+                .pattern("SS ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .define('#', ModItems.STEEL_STICK.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_SHOVEL.get())
+                .pattern(" S ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .define('#', ModItems.STEEL_STICK.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

@@ -44,11 +44,18 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.STEEL_INGOT);
         simpleItem(ModItems.RAW_STEEL);
+        simpleItem(ModItems.STEEL_STICK);
 
         trimmedArmorItem(ModItems.STEEL_HELMET);
         trimmedArmorItem(ModItems.STEEL_CHESTPLATE);
         trimmedArmorItem(ModItems.STEEL_LEGGINGS);
         trimmedArmorItem(ModItems.STEEL_BOOTS);
+
+        handheldItem(ModItems.STEEL_SWORD);
+        handheldItem(ModItems.STEEL_PICKAXE);
+        handheldItem(ModItems.STEEL_AXE);
+        handheldItem(ModItems.STEEL_HOE);
+        handheldItem(ModItems.STEEL_SHOVEL);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
@@ -102,5 +109,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.tryParse("item/generated")).texture("layer0",
                 ResourceLocation.tryBuild(JJKMod.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                mcLoc("item/handheld")).texture("layer0",
+                modLoc("item/" + item.getId().getPath()));
     }
 }

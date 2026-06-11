@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "jjk_modding:steel_ingot"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "S S"
+  ],
+  "result": {
+    "item": "jjk_modding:steel_helmet"
+  },
+  "show_notification": true
+}

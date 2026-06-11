@@ -1,5 +1,6 @@
-// 1.20.1	2026-06-10T20:47:00.7793901	Item Models: jjk_modding
+// 1.20.1	2026-06-11T00:35:07.25001	Item Models: jjk_modding
 ed1079d2534a7cd4f803934e2faf1f4c5ff0bcb5 assets/jjk_modding/models/item/raw_steel.json
+a3e5d732ab85871a87f5a416ee44184014c4b4df assets/jjk_modding/models/item/steel_axe.json
 d3ddb0a7e990814e2499f94ba0a1a1f9961744f7 assets/jjk_modding/models/item/steel_boots.json
 f066ce26a8124a22370d00dc5b2a74ee4c9f6394 assets/jjk_modding/models/item/steel_boots_amethyst_trim.json
 51d3c39852f70dea43317bb8c3a6607186decf5d assets/jjk_modding/models/item/steel_boots_copper_trim.json
@@ -33,6 +34,7 @@ aceaebf01f3c10d0aec324a319a242b6883aba9e assets/jjk_modding/models/item/steel_he
 11c0e351df83e708e1ed0bb1d68d796a700eba19 assets/jjk_modding/models/item/steel_helmet_netherite_trim.json
 eeb87909cd99ec55c95dcaeb99dfb4c34f098e2f assets/jjk_modding/models/item/steel_helmet_quartz_trim.json
 8d73a7a526102fdd6b4c4449e40f479bcfa7d393 assets/jjk_modding/models/item/steel_helmet_redstone_trim.json
+99a87bce93ab7f1a8a9c616794bdfd6201cd81fe assets/jjk_modding/models/item/steel_hoe.json
 ffd0ea44342d795b1ab729025b1ba4500cc25f66 assets/jjk_modding/models/item/steel_ingot.json
 32cfcdd87f8d38bf825c24b4e3375597d3173caf assets/jjk_modding/models/item/steel_leggings.json
 7eaba51dfd2aad2069acb4766a80cbca9f1ec63a assets/jjk_modding/models/item/steel_leggings_amethyst_trim.json
@@ -45,3 +47,7 @@ dccfc5e68abea0fb3fa2ddbc31ade92080012147 assets/jjk_modding/models/item/steel_le
 9a45b8a210e48987eb83ae024a5279e12c4481c2 assets/jjk_modding/models/item/steel_leggings_netherite_trim.json
 dd013aff45f135cc8738aea23949050041ad7f82 assets/jjk_modding/models/item/steel_leggings_quartz_trim.json
 58918045ccf6656651a337817e9153ac30fc427a assets/jjk_modding/models/item/steel_leggings_redstone_trim.json
+a1c3c9c1c12706911cf66284804211748c32ac3d assets/jjk_modding/models/item/steel_pickaxe.json
+1cfc9a26a2b7c193f315a810f31428d9a216c681 assets/jjk_modding/models/item/steel_shovel.json
+52271d30d6619a5eea741dc94b9adca2598a91a8 assets/jjk_modding/models/item/steel_stick.json
+68a60869b3bf43139daa1ab2308be6224395cdb3 assets/jjk_modding/models/item/steel_sword.json

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "jjk_modding:steel_stick"
+    },
+    "S": {
+      "item": "jjk_modding:steel_ingot"
+    }
+  },
+  "pattern": [
+    " S ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "jjk_modding:steel_shovel"
+  },
+  "show_notification": true
+}

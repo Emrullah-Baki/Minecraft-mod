@@ -1,9 +1,16 @@
 {
   "item.jjk_modding.steel_ingot": "Steel",
   "item.jjk_modding.raw_steel": "Raw Steel",
+  "item.jjk_modding.steel_stick": "Steel Stick",
 
   "block.jjk_modding.steel_block": "Block of Steel",
   "block.jjk_modding.steel_ore": "Raw Steel",
+
+  "item.jjk_modding.steel_sword": "Steel Sword",
+  "item.jjk_modding.steel_pickaxe": "Steel Pickaxe",
+  "item.jjk_modding.steel_axe": "Steel Axe",
+  "item.jjk_modding.steel_hoe": "Steel Hoe",
+  "item.jjk_modding.steel_shovel": "Steel Shovel",
 
   "item.jjk_modding.steel_helmet": "Steel Helmet",
   "item.jjk_modding.steel_chestplate": "Steel Chestplate",

@@ -2,6 +2,7 @@ package net.emru.jjk_modding.datagen;
 
 import net.emru.jjk_modding.JJKMod;
 import net.emru.jjk_modding.block.ModBlocks;
+import net.emru.jjk_modding.item.ModItems;
 import net.emru.jjk_modding.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -35,5 +36,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.STEEL_BLOCK.get());
+
+//        this.tag(ModTags.Blocks.NEEDS_STEEL_TOOL)
+//                .add(ModBlocks.BLOCK.get());
     }
 }

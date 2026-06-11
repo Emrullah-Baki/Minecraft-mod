@@ -21,7 +21,9 @@ public class ModArmorItem extends ArmorItem {
                     .put(ModArmorMaterials.STEEL_INGOT, List.of(
                             new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 9,
                                 false,false, false),
-                            new MobEffectInstance(MobEffects.REGENERATION, 200, 2,
+                            new MobEffectInstance(MobEffects.REGENERATION, 200, 0,
+                                    false,false, false),
+                            new MobEffectInstance(MobEffects.DIG_SPEED, 200, 1,
                                     false,false, false)
                     )).build();
 
