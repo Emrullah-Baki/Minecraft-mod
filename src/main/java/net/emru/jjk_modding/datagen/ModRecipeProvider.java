@@ -17,10 +17,12 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike> STEEL_SMELTABLE = List.of(ModItems.RAW_STEEL.get(),
-            ModBlocks.STEEL_ORE.get());
+            ModBlocks.STEEL_ORE.get(),
+            ModBlocks.DEEPSLATE_STEEL_ORE.get());
 
     private static final List<ItemLike> SKY_SMELTABLE = List.of(ModItems.RAW_SKY.get(),
-            ModBlocks.SKY_ORE.get());
+            ModBlocks.SKY_ORE.get(),
+            ModBlocks.DEEPSLATE_SKY_ORE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -80,7 +82,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
 //      STEEL ITEMS
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_STICK.get(), 4)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ELDER_STICK.get(), 4)
                 .pattern(" S ")
                 .pattern(" S ")
                 .define('S', ModItems.STEEL_INGOT.get())
@@ -93,7 +95,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .pattern(" # ")
                 .define('S', ModItems.STEEL_INGOT.get())
-                .define('#', ModItems.STEEL_STICK.get())
+                .define('#', ModItems.ELDER_STICK.get())
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
                 .save(pWriter);
 
@@ -102,7 +104,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" # ")
                 .pattern(" # ")
                 .define('S', ModItems.STEEL_INGOT.get())
-                .define('#', ModItems.STEEL_STICK.get())
+                .define('#', ModItems.ELDER_STICK.get())
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
                 .save(pWriter);
 
@@ -111,7 +113,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("S# ")
                 .pattern(" # ")
                 .define('S', ModItems.STEEL_INGOT.get())
-                .define('#', ModItems.STEEL_STICK.get())
+                .define('#', ModItems.ELDER_STICK.get())
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
                 .save(pWriter);
 
@@ -120,7 +122,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" # ")
                 .pattern(" # ")
                 .define('S', ModItems.STEEL_INGOT.get())
-                .define('#', ModItems.STEEL_STICK.get())
+                .define('#', ModItems.ELDER_STICK.get())
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
                 .save(pWriter);
 
@@ -129,7 +131,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" # ")
                 .pattern(" # ")
                 .define('S', ModItems.STEEL_INGOT.get())
-                .define('#', ModItems.STEEL_STICK.get())
+                .define('#', ModItems.ELDER_STICK.get())
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
                 .save(pWriter);
 
@@ -179,7 +181,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
 //      SKY ITEMS
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SKY_STICK.get(), 4)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ELIXER_STICK.get(), 4)
                 .pattern(" S ")
                 .pattern(" S ")
                 .define('S', ModItems.SKY_INGOT.get())
@@ -192,7 +194,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .pattern(" # ")
                 .define('S', ModItems.SKY_INGOT.get())
-                .define('#', ModItems.SKY_STICK.get())
+                .define('#', ModItems.ELIXER_STICK.get())
                 .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
                 .save(pWriter);
 
@@ -201,7 +203,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" # ")
                 .pattern(" # ")
                 .define('S', ModItems.SKY_INGOT.get())
-                .define('#', ModItems.SKY_STICK.get())
+                .define('#', ModItems.ELIXER_STICK.get())
                 .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
                 .save(pWriter);
 
@@ -210,7 +212,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("S# ")
                 .pattern(" # ")
                 .define('S', ModItems.SKY_INGOT.get())
-                .define('#', ModItems.SKY_STICK.get())
+                .define('#', ModItems.ELIXER_STICK.get())
                 .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
                 .save(pWriter);
 
@@ -219,7 +221,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" # ")
                 .pattern(" # ")
                 .define('S', ModItems.SKY_INGOT.get())
-                .define('#', ModItems.SKY_STICK.get())
+                .define('#', ModItems.ELIXER_STICK.get())
                 .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
                 .save(pWriter);
 
@@ -228,7 +230,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" # ")
                 .pattern(" # ")
                 .define('S', ModItems.SKY_INGOT.get())
-                .define('#', ModItems.SKY_STICK.get())
+                .define('#', ModItems.ELIXER_STICK.get())
                 .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
                 .save(pWriter);
     }

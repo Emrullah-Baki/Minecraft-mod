@@ -1,7 +1,6 @@
 package net.emru.jjk_modding.datagen;
 
 import net.emru.jjk_modding.JJKMod;
-import net.emru.jjk_modding.block.ModBlocks;
 import net.emru.jjk_modding.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
@@ -11,12 +10,10 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.LinkedHashMap;
@@ -44,7 +41,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.STEEL_INGOT);
         simpleItem(ModItems.RAW_STEEL);
-        simpleItem(ModItems.STEEL_STICK);
+        simpleItem(ModItems.ELDER_STICK);
 
         simpleItem(ModItems.STEEL_HELMET);
         simpleItem(ModItems.STEEL_CHESTPLATE);
@@ -59,7 +56,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.SKY_INGOT);
         simpleItem(ModItems.RAW_SKY);
-        simpleItem(ModItems.SKY_STICK);
+        simpleItem(ModItems.ELIXER_STICK);
 
         trimmedArmorItem(ModItems.SKY_HELMET);
         trimmedArmorItem(ModItems.SKY_CHESTPLATE);

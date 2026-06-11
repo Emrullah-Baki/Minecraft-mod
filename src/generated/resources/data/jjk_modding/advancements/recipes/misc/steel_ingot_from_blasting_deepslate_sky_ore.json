@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_steel_ingot": {
+    "has_deepslate_sky_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "jjk_modding:steel_ingot"
+              "jjk_modding:deepslate_sky_ore"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "jjk_modding:steel_stick"
+        "recipe": "jjk_modding:steel_ingot_from_blasting_deepslate_sky_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_steel_ingot",
+      "has_deepslate_sky_ore",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "jjk_modding:steel_stick"
+      "jjk_modding:steel_ingot_from_blasting_deepslate_sky_ore"
     ]
   },
   "sends_telemetry_event": false

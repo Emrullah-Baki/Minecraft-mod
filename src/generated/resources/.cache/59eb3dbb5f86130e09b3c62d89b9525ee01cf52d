@@ -1,4 +1,6 @@
-// 1.20.1	2026-06-11T16:05:52.9010383	Loot Tables
+// 1.20.1	2026-06-11T21:08:26.3034255	Loot Tables
+c1cd1799510d9849735606bae5b3fa7687f86d5c data/jjk_modding/loot_tables/blocks/deepslate_sky_ore.json
+4c61063bfde0f1e5229f03c737fcfac4fde9a684 data/jjk_modding/loot_tables/blocks/deepslate_steel_ore.json
 342636397c3a9e42e605df2873bcdc1cbc6b1d05 data/jjk_modding/loot_tables/blocks/sky_block.json
 5bbc7ffa3edba94ee28bc2b2c088a19cc30bea4a data/jjk_modding/loot_tables/blocks/sky_ore.json
 3aba9bd8dd39a481549f030c1cfb39982be54345 data/jjk_modding/loot_tables/blocks/steel_block.json

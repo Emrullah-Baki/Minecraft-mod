@@ -23,10 +23,14 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.NETHERITE_BLOCK)));
     public static final RegistryObject<Block> STEEL_ORE = registerBlock("steel_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.NETHERITE_BLOCK)));
+    public static final RegistryObject<Block> DEEPSLATE_STEEL_ORE = registerBlock("deepslate_steel_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.NETHERITE_BLOCK)));
 
+    public static final RegistryObject<Block> SKY_BLOCK = registerBlock("sky_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> SKY_ORE = registerBlock("sky_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> SKY_BLOCK = registerBlock("sky_block",
+    public static final RegistryObject<Block> DEEPSLATE_SKY_ORE = registerBlock("deepslate_sky_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.GLASS)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -1,4 +1,6 @@
-// 1.20.1	2026-06-11T16:48:28.6269833	Item Models: jjk_modding
+// 1.20.1	2026-06-11T22:07:29.2373756	Item Models: jjk_modding
+661e8aef20430ccad52677b6ff506a4988e853d9 assets/jjk_modding/models/item/elder_stick.json
+b042456308143473cff6a1be45ceac510d733998 assets/jjk_modding/models/item/elixer_stick.json
 19847b1da134962879f7b6200fe4b81f0130d8d9 assets/jjk_modding/models/item/raw_sky.json
 ed1079d2534a7cd4f803934e2faf1f4c5ff0bcb5 assets/jjk_modding/models/item/raw_steel.json
 6a509b44996f5fad190e52959c3b3d93a2fd5d98 assets/jjk_modding/models/item/sky_axe.json
@@ -50,7 +52,6 @@ b0e24521fb8bb228334ce8c3757a4cc4c726bef2 assets/jjk_modding/models/item/sky_legg
 2f721c71e13819bb20561887daa04dd6f96b39d0 assets/jjk_modding/models/item/sky_leggings_redstone_trim.json
 98aeb3e7d192f281421936e0d61fbebd9c6aa57b assets/jjk_modding/models/item/sky_pickaxe.json
 fe9c0631ada65f8e1236d40c47cd3c6d1b9f32db assets/jjk_modding/models/item/sky_shovel.json
-1b18db0694f85421528d97ee8e06028d6d6ce096 assets/jjk_modding/models/item/sky_stick.json
 3f75578d079764e7212dd5ad4b4a2d297136b526 assets/jjk_modding/models/item/sky_sword.json
 a3e5d732ab85871a87f5a416ee44184014c4b4df assets/jjk_modding/models/item/steel_axe.json
 f7d1a6e33f5db2755ce213de86640adb503aace2 assets/jjk_modding/models/item/steel_boots.json
@@ -61,5 +62,4 @@ ffd0ea44342d795b1ab729025b1ba4500cc25f66 assets/jjk_modding/models/item/steel_in
 fca3486cfbe3be819c4a6c3c549eddf73178b38a assets/jjk_modding/models/item/steel_leggings.json
 a1c3c9c1c12706911cf66284804211748c32ac3d assets/jjk_modding/models/item/steel_pickaxe.json
 1cfc9a26a2b7c193f315a810f31428d9a216c681 assets/jjk_modding/models/item/steel_shovel.json
-52271d30d6619a5eea741dc94b9adca2598a91a8 assets/jjk_modding/models/item/steel_stick.json
 68a60869b3bf43139daa1ab2308be6224395cdb3 assets/jjk_modding/models/item/steel_sword.json

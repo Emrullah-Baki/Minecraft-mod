@@ -1,10 +1,11 @@
 {
   "item.jjk_modding.steel_ingot": "Steel ingot",
   "item.jjk_modding.raw_steel": "Raw Steel ingot",
-  "item.jjk_modding.steel_stick": "Steel Stick",
+  "item.jjk_modding.elder_stick": "Elder Stick",
 
   "block.jjk_modding.steel_block": "Block of Steel",
-  "block.jjk_modding.steel_ore": "Raw Steel",
+  "block.jjk_modding.steel_ore": "Raw Block of Steel",
+  "block.jjk_modding.deepslate_steel_ore": "Raw Deepslate Steel",
 
   "item.jjk_modding.steel_sword": "Steel Sword",
   "item.jjk_modding.steel_pickaxe": "Steel Pickaxe",
@@ -19,10 +20,11 @@
 
   "item.jjk_modding.sky_ingot": "Sky ingot",
   "item.jjk_modding.raw_sky": "Raw Sky ingot",
-  "item.jjk_modding.sky_stick": "Sky Stick",
+  "item.jjk_modding.elixer_stick": "Elixer Stick",
 
   "block.jjk_modding.sky_block": "Block of Sky",
-  "block.jjk_modding.sky_ore": "Raw Sky",
+  "block.jjk_modding.sky_ore": "Raw Block of Sky",
+  "block.jjk_modding.deepslate_sky_ore": "Raw Deepslate Sky",
 
   "item.jjk_modding.sky_sword": "Steel Sword",
   "item.jjk_modding.sky_pickaxe": "Steel Pickaxe",
@@ -35,5 +37,6 @@
   "item.jjk_modding.sky_leggings": "Sky Leggings",
   "item.jjk_modding.sky_boots": "Sky Boots",
 
-  "creativetab.jjk_modding": "Custom Tutorial Tab"
+  "creativetab.steel_tab": "Custom Steel Tab",
+  "creativetab.sky_tab": "Custom Sky Tab"
 }

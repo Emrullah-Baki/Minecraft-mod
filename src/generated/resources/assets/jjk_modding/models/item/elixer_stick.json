@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "jjk_modding:item/sky_stick"
+    "layer0": "jjk_modding:item/elixer_stick"
   }
 }

@@ -17,14 +17,14 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_STEEL = ITEMS.register("raw_steel",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> STEEL_STICK = ITEMS.register("steel_stick",
+    public static final RegistryObject<Item> ELDER_STICK = ITEMS.register("elder_stick",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> SKY_INGOT = ITEMS.register("sky_ingot",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_SKY = ITEMS.register("raw_sky",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SKY_STICK = ITEMS.register("sky_stick",
+    public static final RegistryObject<Item> ELIXER_STICK = ITEMS.register("elixer_stick",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",

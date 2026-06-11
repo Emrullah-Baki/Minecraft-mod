@@ -1,9 +1,10 @@
 {
   "values": [
-    "jjk_modding:steel_ore",
     "jjk_modding:steel_block",
     "jjk_modding:steel_ore",
+    "jjk_modding:deepslate_steel_ore",
+    "jjk_modding:sky_block",
     "jjk_modding:sky_ore",
-    "jjk_modding:sky_block"
+    "jjk_modding:deepslate_sky_ore"
   ]
 }

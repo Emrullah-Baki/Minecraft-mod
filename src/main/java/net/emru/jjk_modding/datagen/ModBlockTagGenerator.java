@@ -27,9 +27,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.STEEL_BLOCK.get(),
                         ModBlocks.STEEL_ORE.get(),
+                        ModBlocks.DEEPSLATE_STEEL_ORE.get(),
 
                         ModBlocks.SKY_BLOCK.get(),
-                        ModBlocks.SKY_ORE.get()
+                        ModBlocks.SKY_ORE.get(),
+                        ModBlocks.DEEPSLATE_SKY_ORE.get()
                         );
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
@@ -37,7 +39,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(ModTags.Blocks.NEEDS_STEEL_TOOL)
                 .add(ModBlocks.STEEL_BLOCK.get(),
-                        ModBlocks.SKY_ORE.get());
+                        ModBlocks.SKY_ORE.get(),
+                        ModBlocks.DEEPSLATE_SKY_ORE.get());
 
         this.tag(ModTags.Blocks.NEEDS_SKY_TOOL)
                 .add(ModBlocks.SKY_BLOCK.get());

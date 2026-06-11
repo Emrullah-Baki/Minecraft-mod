@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sky_ingot": {
+    "has_steel_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "jjk_modding:sky_ingot"
+              "jjk_modding:steel_ingot"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "jjk_modding:sky_stick"
+        "recipe": "jjk_modding:elder_stick"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_sky_ingot",
+      "has_steel_ingot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "jjk_modding:sky_stick"
+      "jjk_modding:elder_stick"
     ]
   },
   "sends_telemetry_event": false

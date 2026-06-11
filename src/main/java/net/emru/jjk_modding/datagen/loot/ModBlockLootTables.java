@@ -28,8 +28,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.STEEL_ORE.get(),
                 block -> createSteelOreDrops(ModBlocks.STEEL_ORE.get(), ModItems.RAW_STEEL.get()));
+        this.add(ModBlocks.DEEPSLATE_STEEL_ORE.get(),
+                block -> createSteelOreDrops(ModBlocks.STEEL_ORE.get(), ModItems.RAW_STEEL.get()));
         this.add(ModBlocks.SKY_ORE.get(),
                 block -> createSkyOreDrops(ModBlocks.SKY_ORE.get(), ModItems.RAW_SKY.get()));
+        this.add(ModBlocks.DEEPSLATE_SKY_ORE.get(),
+                block -> createSkyOreDrops(ModBlocks.DEEPSLATE_SKY_ORE.get(), ModItems.RAW_SKY.get()));
     }
 
     protected LootTable.Builder createSteelOreDrops(Block pBlock, Item item) {
