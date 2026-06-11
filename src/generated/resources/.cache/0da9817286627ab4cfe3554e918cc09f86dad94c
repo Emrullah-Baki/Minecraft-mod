@@ -1,3 +1,4 @@
-// 1.20.1	2026-06-10T20:47:00.7808935	Tags for minecraft:block mod id jjk_modding
+// 1.20.1	2026-06-11T09:07:25.6747681	Tags for minecraft:block mod id jjk_modding
+1f5d94bf424a5feb97c3856f83e0462818651640 data/jjk_modding/tags/blocks/needs_steel_tool.json
 e7eabb2911af49e5dbd1365dd64b06353222324d data/minecraft/tags/blocks/mineable/pickaxe.json
-19f968bea338de86a6dd9d4e4a964e4ac40f0aa4 data/minecraft/tags/blocks/needs_diamond_tool.json
+18146ff221776713f2f24349ee324265a0bfa736 data/minecraft/tags/blocks/needs_diamond_tool.json
