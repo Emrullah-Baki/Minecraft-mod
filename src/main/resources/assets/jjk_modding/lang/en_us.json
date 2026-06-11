@@ -1,6 +1,6 @@
 {
-  "item.jjk_modding.steel_ingot": "Steel",
-  "item.jjk_modding.raw_steel": "Raw Steel",
+  "item.jjk_modding.steel_ingot": "Steel ingot",
+  "item.jjk_modding.raw_steel": "Raw Steel ingot",
   "item.jjk_modding.steel_stick": "Steel Stick",
 
   "block.jjk_modding.steel_block": "Block of Steel",
@@ -17,5 +17,23 @@
   "item.jjk_modding.steel_leggings": "Steel Leggings",
   "item.jjk_modding.steel_boots": "Steel Boots",
 
-  "creativetab.jjk_modding": "Banana Tutorial Tab"
+  "item.jjk_modding.sky_ingot": "Sky ingot",
+  "item.jjk_modding.raw_sky": "Raw Sky ingot",
+  "item.jjk_modding.sky_stick": "Sky Stick",
+
+  "block.jjk_modding.sky_block": "Block of Sky",
+  "block.jjk_modding.sky_ore": "Raw Sky",
+
+  "item.jjk_modding.sky_sword": "Steel Sword",
+  "item.jjk_modding.sky_pickaxe": "Steel Pickaxe",
+  "item.jjk_modding.sky_axe": "Steel Axe",
+  "item.jjk_modding.sky_hoe": "Steel Hoe",
+  "item.jjk_modding.sky_shovel": "Steel Shovel",
+
+  "item.jjk_modding.sky_helmet": "Sky Helmet",
+  "item.jjk_modding.sky_chestplate": "Sky Chestplate",
+  "item.jjk_modding.sky_leggings": "Sky Leggings",
+  "item.jjk_modding.sky_boots": "Sky Boots",
+
+  "creativetab.jjk_modding": "Custom Tutorial Tab"
 }

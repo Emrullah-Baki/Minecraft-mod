@@ -1,4 +1,5 @@
-// 1.20.1	2026-06-11T09:07:25.6747681	Tags for minecraft:block mod id jjk_modding
-1f5d94bf424a5feb97c3856f83e0462818651640 data/jjk_modding/tags/blocks/needs_steel_tool.json
-e7eabb2911af49e5dbd1365dd64b06353222324d data/minecraft/tags/blocks/mineable/pickaxe.json
+// 1.20.1	2026-06-11T16:05:52.8990403	Tags for minecraft:block mod id jjk_modding
+2dc4858efe1a1ece160c9220f3e5db2084bab603 data/jjk_modding/tags/blocks/needs_sky_tool.json
+c0ba9eb413d8f7ca9a7ec2523d551017bd1e5577 data/jjk_modding/tags/blocks/needs_steel_tool.json
+a8bde9b8c9e65e0c0d6c516fbfa384753ec91243 data/minecraft/tags/blocks/mineable/pickaxe.json
 18146ff221776713f2f24349ee324265a0bfa736 data/minecraft/tags/blocks/needs_diamond_tool.json

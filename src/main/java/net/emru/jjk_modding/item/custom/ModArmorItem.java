@@ -16,14 +16,27 @@ import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
 
+    private static final int EFFECT_DURATION = 120;
+    private static final int EFFECT_REFRESH_THRESHOLD = 100;
+
     private static final Map<ArmorMaterial, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, List<MobEffectInstance>>())
                     .put(ModArmorMaterials.STEEL_INGOT, List.of(
-                            new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 9,
+                            new MobEffectInstance(MobEffects.DAMAGE_BOOST, EFFECT_DURATION, 4,
                                 false,false, false),
-                            new MobEffectInstance(MobEffects.REGENERATION, 200, 0,
+                            new MobEffectInstance(MobEffects.REGENERATION, EFFECT_DURATION, 0,
                                     false,false, false),
-                            new MobEffectInstance(MobEffects.DIG_SPEED, 200, 1,
+                            new MobEffectInstance(MobEffects.DIG_SPEED, EFFECT_DURATION, 1,
+                                    false,false, false)
+                    ))
+                    .put(ModArmorMaterials.SKY_INGOT, List.of(
+                            new MobEffectInstance(MobEffects.DAMAGE_BOOST, EFFECT_DURATION, 9,
+                                    false,false, false),
+                            new MobEffectInstance(MobEffects.REGENERATION, EFFECT_DURATION, 1,
+                                    false,false, false),
+                            new MobEffectInstance(MobEffects.DIG_SPEED, EFFECT_DURATION, 2,
+                                    false,false, false),
+                            new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, EFFECT_DURATION, 1,
                                     false,false, false)
                     )).build();
 
@@ -60,10 +73,21 @@ public class ModArmorItem extends ArmorItem {
 
     private void addStatusEffectForMaterial(Player player, ArmorMaterial mapArmorMaterial,
                                             MobEffectInstance mapStatusEffect) {
-        boolean hasPlayerEffect = player.hasEffect(mapStatusEffect.getEffect());
+        if(!hasCorrectArmorOn(mapArmorMaterial, player)) {
+            return;
+        }
 
-        if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addEffect(new MobEffectInstance(mapStatusEffect));
+        MobEffectInstance currentEffect = player.getEffect(mapStatusEffect.getEffect());
+
+        if(currentEffect == null || currentEffect.getDuration() <= EFFECT_REFRESH_THRESHOLD) {
+            player.addEffect(new MobEffectInstance(
+                    mapStatusEffect.getEffect(),
+                    EFFECT_DURATION,
+                    mapStatusEffect.getAmplifier(),
+                    mapStatusEffect.isAmbient(),
+                    mapStatusEffect.isVisible(),
+                    mapStatusEffect.showIcon()
+            ));
         }
     }
 

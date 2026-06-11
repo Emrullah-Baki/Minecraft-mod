@@ -46,16 +46,31 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_STEEL);
         simpleItem(ModItems.STEEL_STICK);
 
-        trimmedArmorItem(ModItems.STEEL_HELMET);
-        trimmedArmorItem(ModItems.STEEL_CHESTPLATE);
-        trimmedArmorItem(ModItems.STEEL_LEGGINGS);
-        trimmedArmorItem(ModItems.STEEL_BOOTS);
+        simpleItem(ModItems.STEEL_HELMET);
+        simpleItem(ModItems.STEEL_CHESTPLATE);
+        simpleItem(ModItems.STEEL_LEGGINGS);
+        simpleItem(ModItems.STEEL_BOOTS);
 
         handheldItem(ModItems.STEEL_SWORD);
         handheldItem(ModItems.STEEL_PICKAXE);
         handheldItem(ModItems.STEEL_AXE);
         handheldItem(ModItems.STEEL_HOE);
         handheldItem(ModItems.STEEL_SHOVEL);
+
+        simpleItem(ModItems.SKY_INGOT);
+        simpleItem(ModItems.RAW_SKY);
+        simpleItem(ModItems.SKY_STICK);
+
+        trimmedArmorItem(ModItems.SKY_HELMET);
+        trimmedArmorItem(ModItems.SKY_CHESTPLATE);
+        trimmedArmorItem(ModItems.SKY_LEGGINGS);
+        trimmedArmorItem(ModItems.SKY_BOOTS);
+
+        handheldItem(ModItems.SKY_SWORD);
+        handheldItem(ModItems.SKY_PICKAXE);
+        handheldItem(ModItems.SKY_AXE);
+        handheldItem(ModItems.SKY_HOE);
+        handheldItem(ModItems.SKY_SHOVEL);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

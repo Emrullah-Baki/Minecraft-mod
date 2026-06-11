@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "jjk_modding:sky_ingot"
+    }
+  },
+  "pattern": [
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 4,
+    "item": "jjk_modding:sky_stick"
+  },
+  "show_notification": true
+}

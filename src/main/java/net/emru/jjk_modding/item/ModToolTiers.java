@@ -15,5 +15,10 @@ public class ModToolTiers {
     public static final Tier STEEL = TierSortingRegistry.registerTier(
             new ForgeTier(5, 2000, 14f, 3f, 25,
                     ModTags.Blocks.NEEDS_STEEL_TOOL, () -> Ingredient.of(ModItems.STEEL_INGOT.get())),
-            ResourceLocation.fromNamespaceAndPath(JJKMod.MOD_ID, "steel"), List.of(Tiers.NETHERITE), List.of());
+            ResourceLocation.fromNamespaceAndPath(JJKMod.MOD_ID, "steel"), List.of(Tiers.DIAMOND), List.of());
+
+    public static final Tier SKY = TierSortingRegistry.registerTier(
+        new ForgeTier(6, 4000, 15f, 4f, 25,
+                   ModTags.Blocks.NEEDS_SKY_TOOL, () -> Ingredient.of(ModItems.SKY_INGOT.get())),
+            ResourceLocation.fromNamespaceAndPath(JJKMod.MOD_ID, "sky"), List.of(Tiers.NETHERITE), List.of());
 }

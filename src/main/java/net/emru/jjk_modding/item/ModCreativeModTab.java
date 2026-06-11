@@ -37,6 +37,25 @@ public class ModCreativeModTab {
                         pOutput.accept(ModItems.STEEL_AXE.get());
                         pOutput.accept(ModItems.STEEL_HOE.get());
                         pOutput.accept(ModItems.STEEL_SHOVEL.get());
+
+                        pOutput.accept(ModItems.SKY_INGOT.get());
+                        pOutput.accept(ModItems.RAW_SKY.get());
+                        pOutput.accept(ModItems.SKY_STICK.get());
+
+                        pOutput.accept(ModBlocks.SKY_ORE.get());
+                        pOutput.accept(ModBlocks.SKY_BLOCK.get());
+                        pOutput.accept(ModBlocks.SKY_BLOCK.get());
+
+                        pOutput.accept(ModItems.SKY_HELMET.get());
+                        pOutput.accept(ModItems.SKY_CHESTPLATE.get());
+                        pOutput.accept(ModItems.SKY_LEGGINGS.get());
+                        pOutput.accept(ModItems.SKY_BOOTS.get());
+
+                        pOutput.accept(ModItems.SKY_SWORD.get());
+                        pOutput.accept(ModItems.SKY_PICKAXE.get());
+                        pOutput.accept(ModItems.SKY_AXE.get());
+                        pOutput.accept(ModItems.SKY_HOE.get());
+                        pOutput.accept(ModItems.SKY_SHOVEL.get());
                     })
                     .build());
 

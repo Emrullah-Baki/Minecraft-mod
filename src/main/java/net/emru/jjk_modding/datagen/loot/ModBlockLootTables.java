@@ -24,9 +24,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.STEEL_BLOCK.get());
+        this.dropSelf(ModBlocks.SKY_BLOCK.get());
 
         this.add(ModBlocks.STEEL_ORE.get(),
                 block -> createSteelOreDrops(ModBlocks.STEEL_ORE.get(), ModItems.RAW_STEEL.get()));
+        this.add(ModBlocks.SKY_ORE.get(),
+                block -> createSkyOreDrops(ModBlocks.SKY_ORE.get(), ModItems.RAW_SKY.get()));
     }
 
     protected LootTable.Builder createSteelOreDrops(Block pBlock, Item item) {
@@ -34,6 +37,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 this.applyExplosionDecay(pBlock,
                         LootItem.lootTableItem(item)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createSkyOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 

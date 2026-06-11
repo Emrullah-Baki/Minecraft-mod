@@ -1,7 +1,13 @@
-// 1.20.1	2026-06-10T20:57:30.3063346	Block States: jjk_modding
+// 1.20.1	2026-06-11T16:48:28.6299833	Block States: jjk_modding
+8dd5bb38d5933df48a813bb894583241dbf80dee assets/jjk_modding/blockstates/sky_block.json
+1215927b57096f3532064e4ba4713d644e5c58b4 assets/jjk_modding/blockstates/sky_ore.json
 8e5ff214f50bfd4da8bab2f0ce88b20eb05f05cf assets/jjk_modding/blockstates/steel_block.json
 a03870866d3c841cf68769078bf6c565bbacfc6a assets/jjk_modding/blockstates/steel_ore.json
+5ad79a6765782148dde1fad72fb6dd60ad93a822 assets/jjk_modding/models/block/sky_block.json
+0b5fc00b03f9804a274fb0a895c4f9f4578b6a3e assets/jjk_modding/models/block/sky_ore.json
 f1739bf630a43f0dae44874c16018f584a1c3bf1 assets/jjk_modding/models/block/steel_block.json
 9e2ead67f6b1231c43b612b8b1142b91070026f1 assets/jjk_modding/models/block/steel_ore.json
+c7bde65dec1039e22fd38dde19f4016b5c09167a assets/jjk_modding/models/item/sky_block.json
+1d8bc98767da2d4f53b692760b3372e5883bdecf assets/jjk_modding/models/item/sky_ore.json
 a1498b4475c3a618c6aca71d24be133a35edb106 assets/jjk_modding/models/item/steel_block.json
 138fa2d22a09e2e9b0a5a426956cde0abcf8184a assets/jjk_modding/models/item/steel_ore.json

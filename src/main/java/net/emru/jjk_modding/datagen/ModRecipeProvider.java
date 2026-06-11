@@ -16,8 +16,11 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
-    private static final List<ItemLike> JJK_SMELTABLES = List.of(ModItems.RAW_STEEL.get(),
+    private static final List<ItemLike> STEEL_SMELTABLE = List.of(ModItems.RAW_STEEL.get(),
             ModBlocks.STEEL_ORE.get());
+
+    private static final List<ItemLike> SKY_SMELTABLE = List.of(ModItems.RAW_SKY.get(),
+            ModBlocks.SKY_ORE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -25,9 +28,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-        oreSmelting(pWriter, JJK_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 0.25f, 200, "steel");
-        oreBlasting(pWriter, JJK_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 0.25f, 100, "steel");
+        oreSmelting(pWriter, STEEL_SMELTABLE, RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 0.25f, 200, "steel");
+        oreBlasting(pWriter, STEEL_SMELTABLE, RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 0.25f, 100, "steel");
 
+        oreSmelting(pWriter, SKY_SMELTABLE, RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 0.25f, 200, "steel");
+        oreBlasting(pWriter, SKY_SMELTABLE, RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 0.25f, 100, "steel");
+
+//      STEEL BLOCKS
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STEEL_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
@@ -41,13 +48,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.STEEL_BLOCK.get()), has(ModBlocks.STEEL_BLOCK.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_STICK.get(), 4)
-                .pattern(" S ")
-                .pattern(" S ")
-                .define('S', ModItems.STEEL_INGOT.get())
-                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
-                .save(pWriter);
-
+//      STEEL ARMOR
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_HELMET.get())
                 .pattern("SSS")
                 .pattern("S S")
@@ -55,7 +56,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_CHESTPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_CHESTPLATE.get())
                 .pattern("S S")
                 .pattern("SSS")
                 .pattern("SSS")
@@ -63,7 +64,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_LEGGINGS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_LEGGINGS.get())
                 .pattern("SSS")
                 .pattern("S S")
                 .pattern("S S")
@@ -71,14 +72,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_BOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_BOOTS.get())
                 .pattern("S S")
                 .pattern("S S")
                 .define('S', ModItems.STEEL_INGOT.get())
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_SWORD.get())
+//      STEEL ITEMS
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_STICK.get(), 4)
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+//      STEEL TOOLS
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_SWORD.get())
                 .pattern(" S ")
                 .pattern(" S ")
                 .pattern(" # ")
@@ -96,7 +106,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_AXE.get())
                 .pattern("SS ")
                 .pattern("S# ")
                 .pattern(" # ")
@@ -121,6 +131,105 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', ModItems.STEEL_INGOT.get())
                 .define('#', ModItems.STEEL_STICK.get())
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+//      SKY Blocks
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SKY_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.SKY_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SKY_INGOT.get(), 9)
+                .requires(ModBlocks.SKY_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SKY_BLOCK.get()), has(ModBlocks.SKY_BLOCK.get()))
+                .save(pWriter);
+
+//      SKY ARMOR
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SKY_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.SKY_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SKY_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.SKY_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SKY_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.SKY_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SKY_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.SKY_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
+                .save(pWriter);
+
+//      SKY ITEMS
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SKY_STICK.get(), 4)
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('S', ModItems.SKY_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
+                .save(pWriter);
+
+//      SKY TOOLS
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SKY_SWORD.get())
+                .pattern(" S ")
+                .pattern(" S ")
+                .pattern(" # ")
+                .define('S', ModItems.SKY_INGOT.get())
+                .define('#', ModItems.SKY_STICK.get())
+                .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SKY_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('S', ModItems.SKY_INGOT.get())
+                .define('#', ModItems.SKY_STICK.get())
+                .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SKY_AXE.get())
+                .pattern("SS ")
+                .pattern("S# ")
+                .pattern(" # ")
+                .define('S', ModItems.SKY_INGOT.get())
+                .define('#', ModItems.SKY_STICK.get())
+                .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SKY_HOE.get())
+                .pattern("SS ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('S', ModItems.SKY_INGOT.get())
+                .define('#', ModItems.SKY_STICK.get())
+                .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SKY_SHOVEL.get())
+                .pattern(" S ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('S', ModItems.SKY_INGOT.get())
+                .define('#', ModItems.SKY_STICK.get())
+                .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
                 .save(pWriter);
     }
 

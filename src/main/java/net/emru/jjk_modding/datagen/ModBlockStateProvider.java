@@ -18,6 +18,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.STEEL_BLOCK);
         blockWithItem(ModBlocks.STEEL_ORE);
+        blockWithItem(ModBlocks.SKY_BLOCK);
+        blockWithItem(ModBlocks.SKY_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "jjk_modding:sky_stick"
+    },
+    "S": {
+      "item": "jjk_modding:sky_ingot"
+    }
+  },
+  "pattern": [
+    " S ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "jjk_modding:sky_shovel"
+  },
+  "show_notification": true
+}
