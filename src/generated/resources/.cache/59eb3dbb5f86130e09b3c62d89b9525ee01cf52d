@@ -1,6 +1,14 @@
-// 1.20.1	2026-06-11T21:08:26.3034255	Loot Tables
+// 1.20.1	2026-06-13T20:20:05.310366	Loot Tables
 c1cd1799510d9849735606bae5b3fa7687f86d5c data/jjk_modding/loot_tables/blocks/deepslate_sky_ore.json
 4c61063bfde0f1e5229f03c737fcfac4fde9a684 data/jjk_modding/loot_tables/blocks/deepslate_steel_ore.json
+6c0bcc49f556c71f5984319d123d27c974c5dda4 data/jjk_modding/loot_tables/blocks/elder_leaves.json
+ea4fd79181bfd3b2dbf05b29d30fad4b6e440f8f data/jjk_modding/loot_tables/blocks/elder_log.json
+0985b99a9dc16fcbceca613a66c64c3a2fe0cec8 data/jjk_modding/loot_tables/blocks/elder_planks.json
+82daa59693a14324924288104c4c48f2418e3b0d data/jjk_modding/loot_tables/blocks/elder_stripped_log.json
+c93657664be8c4a4280db57e69ba438800bbe645 data/jjk_modding/loot_tables/blocks/elixer_leaves.json
+c3547c34c15cb84d35d9eb1ae4bd0cafcbf804f2 data/jjk_modding/loot_tables/blocks/elixer_log.json
+eb8aeaba4fd8708793975cc3b54696d8a5b56d6d data/jjk_modding/loot_tables/blocks/elixer_planks.json
+8e79cbfa59b0048e2bd5a144cc5d729a24577b45 data/jjk_modding/loot_tables/blocks/elixer_stripped_log.json
 342636397c3a9e42e605df2873bcdc1cbc6b1d05 data/jjk_modding/loot_tables/blocks/sky_block.json
 5bbc7ffa3edba94ee28bc2b2c088a19cc30bea4a data/jjk_modding/loot_tables/blocks/sky_ore.json
 3aba9bd8dd39a481549f030c1cfb39982be54345 data/jjk_modding/loot_tables/blocks/steel_block.json

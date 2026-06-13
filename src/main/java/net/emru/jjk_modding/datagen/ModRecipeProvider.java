@@ -6,6 +6,7 @@ import net.emru.jjk_modding.block.ModBlocks;
 import net.emru.jjk_modding.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -77,14 +78,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_BOOTS.get())
                 .pattern("S S")
                 .pattern("S S")
-                .define('S', ModItems.STEEL_INGOT.get())
-                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
-                .save(pWriter);
-
-//      STEEL ITEMS
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ELDER_STICK.get(), 4)
-                .pattern(" S ")
-                .pattern(" S ")
                 .define('S', ModItems.STEEL_INGOT.get())
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
                 .save(pWriter);
@@ -180,14 +173,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
                 .save(pWriter);
 
-//      SKY ITEMS
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ELIXER_STICK.get(), 4)
-                .pattern(" S ")
-                .pattern(" S ")
-                .define('S', ModItems.SKY_INGOT.get())
-                .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
-                .save(pWriter);
-
 //      SKY TOOLS
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SKY_SWORD.get())
                 .pattern(" S ")
@@ -233,6 +218,44 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', ModItems.ELIXER_STICK.get())
                 .unlockedBy(getHasName(ModItems.SKY_INGOT.get()), has(ModItems.SKY_INGOT.get()))
                 .save(pWriter);
+
+//      ELDER WOOD
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ELDER_PLANKS.get(), 4)
+                .requires(ModBlocks.ELDER_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.ELDER_LOG.get()), has(ModBlocks.ELDER_LOG.get()))
+                .save(pWriter, ResourceLocation.fromNamespaceAndPath(JJKMod.MOD_ID, "elder_planks_from_elder_log"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ELDER_PLANKS.get(), 4)
+                .requires(ModBlocks.ELDER_STRIPPED_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.ELIXER_STRIPPED_LOG.get()), has(ModBlocks.ELDER_STRIPPED_LOG.get()))
+                .save(pWriter, ResourceLocation.fromNamespaceAndPath(JJKMod.MOD_ID, "elder_planks_from_elder_stripped_log"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ELDER_STICK.get(), 4)
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('S', ModBlocks.ELDER_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.ELDER_PLANKS.get()), has(ModBlocks.ELDER_PLANKS.get()))
+                .save(pWriter);
+
+
+//      ELIXER WOOD
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ELIXER_PLANKS.get(), 4)
+                .requires(ModBlocks.ELIXER_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.ELIXER_LOG.get()), has(ModBlocks.ELIXER_LOG.get()))
+                .save(pWriter, ResourceLocation.fromNamespaceAndPath(JJKMod.MOD_ID, "elixer_planks_from_elixer_log"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ELIXER_PLANKS.get(), 4)
+                .requires(ModBlocks.ELIXER_STRIPPED_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.ELIXER_STRIPPED_LOG.get()), has(ModBlocks.ELIXER_STRIPPED_LOG.get()))
+                .save(pWriter, ResourceLocation.fromNamespaceAndPath(JJKMod.MOD_ID, "elixer_planks_from_elixer_stripped_log"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ELIXER_STICK.get(), 4)
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('S', ModBlocks.ELIXER_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.ELIXER_PLANKS.get()), has(ModBlocks.ELIXER_PLANKS.get()))
+                .save(pWriter);
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

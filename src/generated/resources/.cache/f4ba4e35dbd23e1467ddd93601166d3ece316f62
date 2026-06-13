@@ -1,2 +1,4 @@
-// 1.20.1	2026-06-11T16:48:28.6259834	Tags for minecraft:item mod id jjk_modding
+// 1.20.1	2026-06-13T20:20:05.3073665	Tags for minecraft:item mod id jjk_modding
+430bb78c8308a184238bb220c002e9c8cb394306 data/minecraft/tags/items/logs_that_burn.json
+0884eef5e73d16909d24ca7f0c5da11c703f70a5 data/minecraft/tags/items/planks.json
 3d7130ec9b059465c826a476c12608c729036b87 data/minecraft/tags/items/trimmable_armor.json

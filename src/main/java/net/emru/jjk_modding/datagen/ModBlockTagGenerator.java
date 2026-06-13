@@ -39,10 +39,23 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(ModTags.Blocks.NEEDS_STEEL_TOOL)
                 .add(ModBlocks.STEEL_BLOCK.get(),
+
                         ModBlocks.SKY_ORE.get(),
                         ModBlocks.DEEPSLATE_SKY_ORE.get());
 
         this.tag(ModTags.Blocks.NEEDS_SKY_TOOL)
                 .add(ModBlocks.SKY_BLOCK.get());
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ELDER_LOG.get())
+                .add(ModBlocks.ELDER_STRIPPED_LOG.get())
+
+                .add(ModBlocks.ELIXER_LOG.get())
+                .add(ModBlocks.ELIXER_STRIPPED_LOG.get());
+
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.ELDER_PLANKS.get())
+
+                .add(ModBlocks.ELIXER_PLANKS.get());
     }
 }

@@ -1,6 +1,7 @@
 package net.emru.jjk_modding.datagen;
 
 import net.emru.jjk_modding.JJKMod;
+import net.emru.jjk_modding.block.ModBlocks;
 import net.emru.jjk_modding.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -25,5 +26,17 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.SKY_CHESTPLATE.get(),
                         ModItems.SKY_LEGGINGS.get(),
                         ModItems.SKY_BOOTS.get());
+
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ELDER_LOG.get().asItem())
+                .add(ModBlocks.ELDER_STRIPPED_LOG.get().asItem())
+
+                .add(ModBlocks.ELIXER_LOG.get().asItem())
+                .add(ModBlocks.ELIXER_STRIPPED_LOG.get().asItem());
+
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.ELDER_PLANKS.get().asItem())
+
+                .add(ModBlocks.ELIXER_PLANKS.get().asItem());
     }
 }

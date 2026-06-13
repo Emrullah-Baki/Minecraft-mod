@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sky_ingot": {
+    "has_elixer_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "jjk_modding:sky_ingot"
+              "jjk_modding:elixer_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_sky_ingot",
+      "has_elixer_planks",
       "has_the_recipe"
     ]
   ],

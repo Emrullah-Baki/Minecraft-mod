@@ -34,6 +34,20 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSkyOreDrops(ModBlocks.SKY_ORE.get(), ModItems.RAW_SKY.get()));
         this.add(ModBlocks.DEEPSLATE_SKY_ORE.get(),
                 block -> createSkyOreDrops(ModBlocks.DEEPSLATE_SKY_ORE.get(), ModItems.RAW_SKY.get()));
+
+        this.dropSelf(ModBlocks.ELDER_LOG.get());
+        this.dropSelf(ModBlocks.ELDER_STRIPPED_LOG.get());
+        this.dropSelf(ModBlocks.ELDER_PLANKS.get());
+
+        this.add(ModBlocks.ELDER_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.ELDER_LOG.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.dropSelf(ModBlocks.ELIXER_LOG.get());
+        this.dropSelf(ModBlocks.ELIXER_STRIPPED_LOG.get());
+        this.dropSelf(ModBlocks.ELIXER_PLANKS.get());
+
+        this.add(ModBlocks.ELIXER_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.ELIXER_LOG.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     protected LootTable.Builder createSteelOreDrops(Block pBlock, Item item) {

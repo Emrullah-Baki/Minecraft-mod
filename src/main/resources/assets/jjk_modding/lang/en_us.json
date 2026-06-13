@@ -3,9 +3,11 @@
   "item.jjk_modding.raw_steel": "Raw Steel ingot",
   "item.jjk_modding.elder_stick": "Elder Stick",
 
+
   "block.jjk_modding.steel_block": "Block of Steel",
-  "block.jjk_modding.steel_ore": "Raw Block of Steel",
-  "block.jjk_modding.deepslate_steel_ore": "Raw Deepslate Steel",
+  "block.jjk_modding.steel_ore": "Raw Steel Block",
+  "block.jjk_modding.deepslate_steel_ore": "Raw Steel Deepslate",
+
 
   "item.jjk_modding.steel_sword": "Steel Sword",
   "item.jjk_modding.steel_pickaxe": "Steel Pickaxe",
@@ -13,30 +15,50 @@
   "item.jjk_modding.steel_hoe": "Steel Hoe",
   "item.jjk_modding.steel_shovel": "Steel Shovel",
 
+
   "item.jjk_modding.steel_helmet": "Steel Helmet",
   "item.jjk_modding.steel_chestplate": "Steel Chestplate",
   "item.jjk_modding.steel_leggings": "Steel Leggings",
   "item.jjk_modding.steel_boots": "Steel Boots",
 
+
   "item.jjk_modding.sky_ingot": "Sky ingot",
   "item.jjk_modding.raw_sky": "Raw Sky ingot",
   "item.jjk_modding.elixer_stick": "Elixer Stick",
 
-  "block.jjk_modding.sky_block": "Block of Sky",
-  "block.jjk_modding.sky_ore": "Raw Block of Sky",
-  "block.jjk_modding.deepslate_sky_ore": "Raw Deepslate Sky",
 
-  "item.jjk_modding.sky_sword": "Steel Sword",
-  "item.jjk_modding.sky_pickaxe": "Steel Pickaxe",
-  "item.jjk_modding.sky_axe": "Steel Axe",
-  "item.jjk_modding.sky_hoe": "Steel Hoe",
-  "item.jjk_modding.sky_shovel": "Steel Shovel",
+  "block.jjk_modding.sky_block": "Block of Sky",
+  "block.jjk_modding.sky_ore": "Raw Sky Block",
+  "block.jjk_modding.deepslate_sky_ore": "Raw Sky Deepslate",
+
+
+  "item.jjk_modding.sky_sword": "Sky Sword",
+  "item.jjk_modding.sky_pickaxe": "Sky Pickaxe",
+  "item.jjk_modding.sky_axe": "Sky Axe",
+  "item.jjk_modding.sky_hoe": "Sky Hoe",
+  "item.jjk_modding.sky_shovel": "Sky Shovel",
+
 
   "item.jjk_modding.sky_helmet": "Sky Helmet",
   "item.jjk_modding.sky_chestplate": "Sky Chestplate",
   "item.jjk_modding.sky_leggings": "Sky Leggings",
   "item.jjk_modding.sky_boots": "Sky Boots",
 
+
+  "block.jjk_modding.elder_log": "Elder Log",
+  "block.jjk_modding.elder_stripped_log": "Stripped Elder Log",
+  "block.jjk_modding.elder_planks": "Elder Planks",
+  "block.jjk_modding.elder_leaves": "Elder leaves",
+
+
+  "block.jjk_modding.elixer_log": "Elixer Log",
+  "block.jjk_modding.elixer_stripped_log": "Stripped Elixer Log",
+  "block.jjk_modding.elixer_planks": "Elixer Planks",
+  "block.jjk_modding.elixer_leaves": "Elixer leaves",
+
+
   "creativetab.steel_tab": "Custom Steel Tab",
-  "creativetab.sky_tab": "Custom Sky Tab"
+  "creativetab.sky_tab": "Custom Sky Tab",
+  "creativetab.elder_wood_tab": "Custom Elder Wood Tab",
+  "creativetab.elixer_wood_tab": "Custom Elixer Wood Tab"
 }

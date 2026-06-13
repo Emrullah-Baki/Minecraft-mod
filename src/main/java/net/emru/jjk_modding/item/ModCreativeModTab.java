@@ -24,10 +24,8 @@ public class ModCreativeModTab {
                         pOutput.accept(ModBlocks.DEEPSLATE_STEEL_ORE.get());
                         pOutput.accept(ModBlocks.STEEL_BLOCK.get());
 
-                        pOutput.accept(ModItems.STEEL_INGOT.get());
                         pOutput.accept(ModItems.RAW_STEEL.get());
-
-                        pOutput.accept(ModItems.ELDER_STICK.get());
+                        pOutput.accept(ModItems.STEEL_INGOT.get());
 
                         pOutput.accept(ModItems.STEEL_HELMET.get());
                         pOutput.accept(ModItems.STEEL_CHESTPLATE.get());
@@ -51,10 +49,8 @@ public class ModCreativeModTab {
                         pOutput.accept(ModBlocks.DEEPSLATE_SKY_ORE.get());
                         pOutput.accept(ModBlocks.SKY_BLOCK.get());
 
-                        pOutput.accept(ModItems.SKY_INGOT.get());
                         pOutput.accept(ModItems.RAW_SKY.get());
-
-                        pOutput.accept(ModItems.ELIXER_STICK.get());
+                        pOutput.accept(ModItems.SKY_INGOT.get());
 
                         pOutput.accept(ModItems.SKY_HELMET.get());
                         pOutput.accept(ModItems.SKY_CHESTPLATE.get());
@@ -66,6 +62,35 @@ public class ModCreativeModTab {
                         pOutput.accept(ModItems.SKY_AXE.get());
                         pOutput.accept(ModItems.SKY_HOE.get());
                         pOutput.accept(ModItems.SKY_SHOVEL.get());
+
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> ELDER_WOOD = CREATIVE_MODE_TABS.register("elder_wood_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ELDER_PLANKS.get()))
+                    .title(Component.translatable("creativetab.elder_wood_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+
+                        pOutput.accept(ModBlocks.ELDER_LOG.get());
+                        pOutput.accept(ModBlocks.ELDER_STRIPPED_LOG.get());
+
+                        pOutput.accept(ModBlocks.ELDER_PLANKS.get());
+                        pOutput.accept(ModBlocks.ELDER_LEAVES.get());
+
+                        pOutput.accept(ModItems.ELDER_STICK.get());
+
+                    }).build());
+    public static final RegistryObject<CreativeModeTab> ELIXER_WOOD = CREATIVE_MODE_TABS.register("elixer_wood_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ELIXER_PLANKS.get()))
+                    .title(Component.translatable("creativetab.elixer_wood_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+
+                        pOutput.accept(ModBlocks.ELIXER_LOG.get());
+                        pOutput.accept(ModBlocks.ELIXER_STRIPPED_LOG.get());
+
+                        pOutput.accept(ModBlocks.ELIXER_PLANKS.get());
+                        pOutput.accept(ModBlocks.ELIXER_LEAVES.get());
+
+                        pOutput.accept(ModItems.ELIXER_STICK.get());
 
                     }).build());
 
